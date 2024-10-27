@@ -451,6 +451,9 @@ export default function Produtos() {
               O arquivo deve ser uma imagem no formato PNG, JPEG ou JPG, com no
               máximo 1MB.
             </Typography>
+            <Typography variant="h6" gutterBottom sx={{ my: 1 }}>
+              Informações
+            </Typography>
             <BasicTextField
               id="description"
               name="description"
