@@ -4,8 +4,6 @@ import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
 import Card from "@mui/material/Card";
 
-const apiUrl = import.meta.env.VITE_API_URL;
-
 export default function BasicCard(props) {
   return (
     <Card sx={{ minWidth: 275 }}>
@@ -13,7 +11,7 @@ export default function BasicCard(props) {
         <CardMedia
           component="img"
           height="210" // default 140
-          image={`${apiUrl}/${props.image}`}
+          image={props.image}
         />
       )}
       <CardContent>
